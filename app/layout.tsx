@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -6,6 +6,8 @@ import Header from "./components/Header";
 import ActiveSectionContextProvider from "./context/active-section-context";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
+import ThemeSwithButton from "./components/theme-switch";
+import ThemeContextProvider from "./context/theme-context-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-gray-50 text-gray-950 pt-28 sm:pt-40`}
+        className={`${inter.className} bg-gray-50 text-gray-950 pt-28 sm:pt-40
+        dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90
+        `}
       >
         <div
           className="bg-[#fbe2e3] absolute top-[-6rem] right-[11rem] h-[31.25rem] w-[50rem]
@@ -38,12 +42,15 @@ export default function RootLayout({
         
         "
         ></div>
-        <ActiveSectionContextProvider>
-          <Header />
-          {children}
-          <Footer/>
-          <Toaster position="top-right" />
-        </ActiveSectionContextProvider>
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <Header />
+            {children}
+            <Footer />
+            <Toaster position="top-right" />
+            <ThemeSwithButton />
+          </ActiveSectionContextProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );

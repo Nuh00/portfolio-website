@@ -51,7 +51,7 @@ function Intro() {
               duration: 0.7,
             }}
           >
-            🔥
+            🥇
           </motion.span>
         </motion.div>
       </div>
@@ -67,13 +67,13 @@ function Intro() {
           duration: 0.4,
         }}
       >
-        My name is <span className="font-bold">Noah Barkat </span>
+        My name is <span className="font-bold ">Noah Barkat </span>
         ...as a passionate{" "}
-        <span className="font-bold"> full-stack developer </span>, I specialize
-        in building <span className="font-bold"> dynamic </span> and{" "}
-        <span className="font-bold"> responsive </span>web applications. I am
-        driven by a love for <span className="font-bold"> problem-solving</span>{" "}
-        and a desire to <span className="italic">learn</span> and{" "}
+        <span className="font-bold"> Software Engineer </span>, I specialize in
+        building... <span className="font-bold"> whatever is thrown at me</span>
+        . I am driven by a love for{" "}
+        <span className="font-bold"> problem-solving</span> and a desire to{" "}
+        <span className="italic">learn</span> and{" "}
         <span className="italic"> grow</span> in the ever-evolving{" "}
         <span className="italic">tech</span> landscape.
       </motion.p>
@@ -93,7 +93,7 @@ function Intro() {
           }}
           className=" group flex items-center gap-2 rounded-full bg-gray-900 text-white px-7 py-3 
           outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105
-          transition
+          transition 
 
           "
         >
@@ -102,10 +102,13 @@ function Intro() {
         </Link>
 
         <a
-          href=""
+          href="file:///Users/noahbarkat/Downloads/SWE%20Resume%20(2).pdf"
           className=" group flex items-center gap-2 rounded-full bg-white px-7 py-3
           outline-none focus:scale-110 hover:scale-110 active:scale-105
           transition border border-black/10
+
+          dark:bg-white/10
+          
            "
         >
           {" "}
@@ -120,7 +123,7 @@ function Intro() {
           transition
            "
         >
-          <BsLinkedin className="text-2xl text-blue-800" />
+          <BsLinkedin className="text-2xl text-blue-800 dark:text-white" />
         </a>
 
         <a

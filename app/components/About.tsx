@@ -20,14 +20,14 @@ function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="text-gray-700mt-4">
+      <p className="text-gray-700 dark:text-gray-200 mt-4">
         My journey in tech started with a fascination for how the web works,
         leading me to learn HTML, CSS, and{" "}
         <span className="font-medium"> JavaScript.</span> Over time, I expanded
         my skill set to include <span>frameworks</span> and tools such as{" "}
         <span className="font-medium">
           {" "}
-          React, Next.js, Tailwind and Django.
+          React, Next.js, mongoDB and ExpressJS.
         </span>{" "}
         This diverse knowledge base allows me to tackle a wide range of
         challenges, from
@@ -38,7 +38,7 @@ function About() {
           developing efficient server-side logic.
         </span>
       </p>
-      <p className="text-gray-700 mt-4">
+      <p className="text-gray-700 dark:text-gray-200 mt-4">
         I take pride in my attention to detail and commitment to continuous
         improvement. Whether working on solo projects or{" "}
         <span className="font-medium"> collaborating with teams, </span> I am
@@ -49,7 +49,7 @@ function About() {
           delivering high-quality, scalable solutions.
         </span>
       </p>
-      <p className="text-gray-700 mt-4">
+      <p className="text-gray-700 dark:text-gray-200 mt-4">
         Outside of coding, I enjoy staying updated with the latest tech trends
         and spending time with my family. I am also an avid reader and love
         reading about history.

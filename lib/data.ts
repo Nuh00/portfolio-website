@@ -120,7 +120,7 @@ export const skillsData = [
   "Django",
   "Framer Motion",
   "Firebase",
-  "axios",
+  "mongoose",
   "vercel",
   "data structures",
   "algorithms",

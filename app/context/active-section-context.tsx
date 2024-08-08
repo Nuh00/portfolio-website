@@ -1,7 +1,6 @@
 import React, { useState, createContext, useContext } from "react";
 import type { SectionName } from "../../lib/types";
 
-
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
 };
@@ -13,14 +12,15 @@ type ActiveSectionContextType = {
   setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 };
 
-export const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null);
+export const ActiveSectionContext =
+  createContext<ActiveSectionContextType | null>(null);
 
 function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProviderProps) {
   const [active, setActive] = useState<SectionName>("Home"); // This is the state that keeps track of the active link
   const [timeOfLastClick, setTimeOfLastClick] = useState(0); // We need to keep track of this
-                 // to disable the observer temporarily after a link is clicked
+  // to disable the observer temporarily after a link is clicked
 
   return (
     <ActiveSectionContext.Provider
