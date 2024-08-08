@@ -102,7 +102,7 @@ function Intro() {
         </Link>
 
         <a
-          href="file:///Users/noahbarkat/Downloads/SWE%20Resume%20(2).pdf"
+          href="https://docs.google.com/document/d/1EN6j5egdvoqDPC6HUF6ypLNr9kiOjcf6Ke120MGtBzg/edit?usp=sharing"
           className=" group flex items-center gap-2 rounded-full bg-white px-7 py-3
           outline-none focus:scale-110 hover:scale-110 active:scale-105
           transition border border-black/10
